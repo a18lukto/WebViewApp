@@ -9,9 +9,12 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
     // Create a private member variable that can hold our WebView
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +29,10 @@ public class MainActivity extends AppCompatActivity {
         //Skapa webview
         setContentView(webView);
         //göra webview aktiv
-        webView.loadUrl("http://wwwlab.iit.his.se/a18lukto/MobilApp/Projket%20md/Main.html");
+        //webView.loadUrl("http://wwwlab.iit.his.se/a18lukto/MobilApp/Projket%20md/Main.html");
         //säga till vilken sida som ska visas
+        webView.loadUrl("file:///android_asset/about.html");
+
     }
 
     @Override
